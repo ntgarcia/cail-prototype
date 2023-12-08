@@ -1,8 +1,7 @@
 import 'app/App.css';
-import ItemList from 'components/item-list/item-list';
 import Activity from 'pages/activity';
 import { useState } from 'react';
-import { activities, users } from 'utils/data';
+import { users } from 'utils/data';
 
 function App() {
 
@@ -15,7 +14,7 @@ function App() {
 
 	const verify_Login = (user, pswd) => {
 
-		let response = Object.values(users).filter(e => e.user === user && e.pswd === pswd)
+		let response = Object.values( users ).filter(e => e.user === user && e.pswd === pswd)
 
 		console.log(response);
 
