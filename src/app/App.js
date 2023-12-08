@@ -18,14 +18,10 @@ function App() {
       (e) => e.user === user && e.pswd === pswd
     );
 
-    console.log(response);
-
     if (response.length > 0) {
-      console.log("login successful");
       setLogged(true);
       return true;
     } else {
-      console.log("login failed");
       return false;
     }
   };
