@@ -14,16 +14,13 @@ function App() {
 
 	const verify_Login = (user, pswd) => {
 
-		let response = Object.values( users ).filter(e => e.user === user && e.pswd === pswd)
-
-		console.log(response);
+		let response = Object.values(users).filter(e => e.user === user && e.pswd === pswd);
 
 		if (response.length > 0) {
-			console.log("login successful")
 			setLogged(true)
 			return true
+
 		} else {
-			console.log("login failed")
 			return false
 		}
 	}
